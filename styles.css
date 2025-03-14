@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Sections */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin-top: 60px; /* Adjust for navbar height */
+  }
+  
+  section {
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Home Section */
+  #home {
+    background: linear-gradient(135deg, #00bcd4, #009688);
+  }
+  
+  /* About Section */
+  #about {
+    background: linear-gradient(135deg, #f44336, #e91e63);
+  }
+  
+  /* Services Section */
+  #services {
+    background: linear-gradient(135deg, #4caf50, #8bc34a);
+  }
+  
+  /* Contact Section */
+  #contact {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+  }
+  
+  /* Fixed Navigation Menu */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(33, 33, 33, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  #navbar .logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  #navbar ul li {
+    margin-left: 30px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #navbar ul li a:hover {
+    color: #00bcd4;
+    transform: scale(1.1);
+  }
+  
+  /* Active and Scrolled States */
+  .scrolled {
+    background-color: rgba(33, 33, 33, 1);
+  }
+  
+  .scrolled .logo a {
+    color: #00bcd4;
+  }
+  
+  .scrolled ul li a {
+    color: #00bcd4;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    #navbar ul {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    #navbar ul li {
+      margin-left: 0;
+      width: 100%;
+      text-align: left;
+    }
+  
+    #navbar ul li a {
+      padding: 10px 0;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
